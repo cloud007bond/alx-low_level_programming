@@ -14,13 +14,13 @@ int main(void)
 
 	while (i < 123)
 	{
-		putchar (i);
+		putchar(i);
 		i++;
 	}
 
 	while (j < 91)
 	{
-		putchar (j);
+		putchar(j);
 		j++;
 	}
 		putchar(10)
