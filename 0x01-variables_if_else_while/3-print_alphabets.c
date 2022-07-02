@@ -5,14 +5,11 @@
  *
  *  Return: Always (Success)
  */
-
 int main(void)
-
 {
 	int i, j;
 
 	i = 97;
-
 	j = 65;
 
 	while (i < 123)
