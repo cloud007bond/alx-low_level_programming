@@ -1,16 +1,27 @@
 #include <stdio.h>
-
 /**
- * main - Prints the alphabetic
- * Return: Always (Success)
+ * main - print letters of alphabet
+ *
+ * Description: print letters of alphabet
+ *
+ * Return: always 0 (success)
+ *
  */
-int maini(void)
+int main(void)
 
 {
-  char c;
+	int i = 97;
+	
+	while (i < 123)
+	
+	{
+		putchar(i);
 
-	for (c = 'a'; c <= 'z'; c++)
-	putchar(c);
-	putchar('\n');
-	return (0);
+		i++;
+	}
+
+	putchar(10);
+
+	return(0);
+
 }
