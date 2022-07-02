@@ -5,6 +5,7 @@
  * Return: Always (Success)
  */
 int maini(void)
+
 {
   char c;
 
