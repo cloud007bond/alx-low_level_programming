@@ -1,43 +1,24 @@
-#include <stdio.h>
+ #include <stdio.h>
 
 /**
- * main - Prints combination of numbers
- *
- * Return: Always (Success)
+ * main - Entry point
+ * Return: Always 0
  */
-
 int main(void)
-
 {
-	int c, i;
-	
-	for(c = '0'; c <= '9', c++)
-
+	int digit1, digit2;
+	for (digit1 = 0; digit1 < 9; digit1++)
 	{
-		for (i = '0'; i <= '9'; i++)
-		
+		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 		{
-			if (c < i)
-
-		         {
-				 putchar(c);
-				 
-				 putchar(i);
-
-				 if (c != '8' || (c == '8' && i !='9'))
-
-			          {
-					  putchar(',');
-
-					  putchar(' ');
-
-			          }
-	                 }
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
-
 	putchar('\n');
-
-	return(0);
-
+	return (0);
 }
