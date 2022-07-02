@@ -2,24 +2,13 @@
 
 /**
  * main - Prints the alphabetic
- *
  * Return: Always (Success)
  */
-
-int main(void)
-
+int maini(void)
 {
-
   char c;
-
-  
   for (c = 'a'; c <= 'z'; c++)
-
-	   putchar(c);
-
-
+  putchar(c);
   putchar('\n');
-
   return (0);
-
 }
