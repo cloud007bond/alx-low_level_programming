@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Prints the alphabetic in lower and upper case
+ *
+ * Description: get a random number and check the last digit ,compare it to 5
  *
  *  Return: Always (Success)
  */
