@@ -18,11 +18,13 @@ int main(void)
 	while (i < 123)
 	{
 		putchar(i);
+
 		i++;
 	}
 	while (j < 97)
 	{
 		putchar(j);
+
 		j++;
 	}
 	putchar(10);
