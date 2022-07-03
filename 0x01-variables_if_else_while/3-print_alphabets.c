@@ -4,20 +4,28 @@
 /**
  * main - Prints the alphabetic in lower and upper case
  *
- * Description: get a random number and check the last digit ,compare it to 5
+ * Description: print the letter  alphabet in lower acse then in upper case
  *
  *  Return: Always (Success)
  */
 int main(void)
 {
-	char c = 'a';
+	int i, j;
 
-	while (c <= 'z')
+	i = 97;
+	j = 65;
+
+	while (i < 123)
 	{
-		putchar(c);
-		c++;
+		putchar(i);
+		i++;
 	}
-	putchar('\n');
+	while (j < 97)
+	{
+		putchar(j);
+		j++;
+	}
+	putchar(10);
 	return (0);
 }
 
