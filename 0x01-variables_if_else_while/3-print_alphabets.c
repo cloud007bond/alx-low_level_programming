@@ -21,7 +21,7 @@ int main(void)
 
 		i++;
 	}
-	while (j < 97)
+	while (j < 91)
 	{
 		putchar(j);
 
@@ -30,4 +30,3 @@ int main(void)
 	putchar(10);
 	return (0);
 }
-
