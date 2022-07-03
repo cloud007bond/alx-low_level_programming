@@ -2,22 +2,20 @@
 
 /**
  * main - Entry poimt
- * Return: Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 	char letter;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-
-		putchar(letter);
-
-	for (letter = 'A'; letter <= 'Z'; letter++)
-
-		putchar(letter);
-
+	for (letter = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e'; &&c != 'q')
+		{
+			putchar(c);
+		}
+	}
 	putchar('\n');
-
 	return (0);
 }
 
