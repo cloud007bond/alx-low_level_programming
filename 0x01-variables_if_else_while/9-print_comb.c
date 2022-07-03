@@ -5,33 +5,20 @@
  *
  *Return: Always (Success);
  */
-
 int main(void)
-
 {
-	
-           int c;
+	int c = 0;
 
-           for (c = '0'; c <= '9'; c++)
-
-	   {
-
-		putchar(c);
-
-		if (c != '9')
-	        
-	        {
+	while (c < 10)
+	{
+		putchar(48 + c)
+		if (c != 9)
+		{
 			putchar(',');
-
-		        putchar(' ');
-
-	        }
-
-
-	  }
-
-	   putchar('\n');
-
-	   return(0);
-
+			putchar(' ');
+		}
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
