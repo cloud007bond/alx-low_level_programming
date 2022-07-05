@@ -5,7 +5,7 @@
  * Description: wriet a code that print lower acseof alphabet
  * Return: always 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	int j;
 
