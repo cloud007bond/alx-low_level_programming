@@ -9,12 +9,12 @@ void times_table(void)
 {
 	int row, column, product, tens, ones;
 
-	for (roe = 0; row <= 9; row++)
+	for (row = 0; row <= 9; row++)
 
 	{
-		for (column = 0; column <= 9; column ++ 0)
+		for (column = 0; column <= 9; column++)
 		{	product = row * column;
-			tens = produt / 10;
+			tens = product / 10;
 			ones = product % 10;
 
 			if (column == 0)
