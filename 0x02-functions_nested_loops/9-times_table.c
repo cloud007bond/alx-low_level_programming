@@ -12,8 +12,8 @@ void times_table(void)
 	for (roe = 0; row <= 9; row++)
 
 	{
-		for (column = 0; column <= 9; column ++0)
-		{	product = row * colimn;
+		for (column = 0; column <= 9; column ++ 0)
+		{	product = row * column;
 			tens = produt / 10;
 			ones = product % 10;
 
