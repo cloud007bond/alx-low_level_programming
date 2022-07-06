@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
- * main - print lower case of an alphabet
- * Description: wriet a code that print lower acseof alphabet
- * Return: void
+ * print_alphabet - print all alphabets
  */
 void print_alphabet(void)
 {
-int i;
+	char letter = 'a';
 
-for (i = 97; i <= 122; i++)
-{
-_putchar(i);
-}
+	while (letter <= 'z')
+	{
+		_putchar(letter);
 
-_putchar('\n');
+		letter++;
+	}
+	_putchar('\n');
 }
 
