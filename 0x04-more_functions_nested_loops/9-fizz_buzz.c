@@ -1,39 +1,31 @@
-#include<stdio.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
- * main - print fizzbuzz
- * Return: 0
+ * main - take the fizz-buzz challenge
+ *
+ * Return: Always 0
  */
 
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 1; i <= 100; i++)
+	for (n = 1; n < 101; n++)
 	{
-		if ((i % 3) == 0)
-		{
-			printf("Fizz");
-		}
-		else if ((i % 5) == 0)
-		{
-			printf("Buzz");
-		}
-		else if ((i % 3) == 0 && (i % 5) == 0)
-		{
-			printf("FizzBuzz");
-		}
+		if (n % 5 == 0 && n % 3 == 0)
+			printf("FizzBuzz ");
+		else if (n % 5 == 0)
+			if (n == 100)
+				printf("Buzz");
+			else
+				printf("Buzz ");
+		else if (n % 3 == 0)
+			printf("Fizz ");
 		else
-		{
-			printf("%d", i);
-		}
-		if (i == 100)
-		{
-			continue;
-		}
-		printf(" ");
+			printf("%d ", n);
 	}
 	printf("\n");
 
 	return (0);
-}
+
