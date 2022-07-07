@@ -6,8 +6,11 @@
  * @base: base
  * @exp: exponent
  * Return: result (int)
+ *
  */
-int  power(int base, int exp)
+
+int power(int base, int exp)
+
 {
 	int i, num;
 
@@ -25,6 +28,7 @@ int  power(int base, int exp)
  */
 
 void print_number(int n)
+
 {
 	int negative = 0;
 	int digit;
