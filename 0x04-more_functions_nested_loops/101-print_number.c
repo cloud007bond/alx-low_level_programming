@@ -2,10 +2,11 @@
 #include <string.h>
 
 /**
- * print_number - print integer nmbers
+ * print_number - print integer numbers
  * @n: number
  * Return: 0
  */
+
 void print_number(int n)
 {
 	int count;
@@ -22,3 +23,4 @@ void print_number(int n)
 		}
 	}
 }
+
