@@ -11,10 +11,11 @@
 void rev_string(char *s)
 {
 	int k;
+	char *school = s;
 
 	for (k = strlen(s); k != '\0'; k--)
 	{
-		*s = s[k];
+		*school = s[k];
 	}
 	printf("\n");
 }
