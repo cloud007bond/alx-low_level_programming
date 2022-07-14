@@ -1,29 +1,21 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * cap_string - ...
- * @s: ...
- * Return: char value
+ * string_toupper - Changes all lowercase letters to uppercase
+ * @p: The string will be modified
+ * Return: char var
  */
-char *cap_string(char *s)
+char *string_toupper(char *p)
 {
-	int a = 0, i;
-	int cspc = 13;
-	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
+	int a = 0;
 
-	while (s[a])
+	while (p[a])
 	{
-		i = 0;
-
-		while (i < cspc)
+		if (p[a] >= 97 && p[a] <= 122)
 		{
-			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-			s[a] -= 32;
-			i++;
+			p[a] -= 32;
 		}
 		a++;
 	}
-	return (s);
+	return (p);
 }
-
