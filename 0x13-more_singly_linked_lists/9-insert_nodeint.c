@@ -1,106 +1,41 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * listint_len - Returns the number of nodes in a list
- * @h: The head of the list
- *
- * Return: The number of nodes or 0
+ * insert_nodeint_at_index - inserting a new node at agiven postion
+ * @head: double pointer
+ * @idx: index of the node
+ * @n: new node value
+ * Return: the address of new node
  */
-size_t listint_len(const listint_t *h)
-{
-	size_t numElem = 0;
-
-	while (h != NULL)
-	{
-		numElem++;
-		h = h->next;
-	}
-	return (numElem);
-}
-
-/**
- * get_nodeint_at_index - Returns the number at a particular node index
- * @head: Head of the list
- * @index: Index No of node
- *
- * Return: Pointer to the node
- */
-
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
-{
-
-	size_t size = listint_len(head);
-
-	listint_t *node = head;
-
-	size_t current = 0;
-
-	if (index > size || head == NULL)
-
-		return (NULL);
-
-	while (current < index)
-
-	{
-
-		node = node->next;
-
-		current++;
-
-	}
-	return (node);
-}
-
-/**
- * insert_nodeint_at_index - Inserts a new node at index specified
- * @head: Pointer to head
- * @idx: The index position to replace
- * @n: The number for the node
- *
- * Return: The address of the new node
- */
-
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
-
 {
+	unsigned int i;
+	listint_t *temp, *new;
 
-	listint_t *node;
-
-	listint_t *before;
-
-	size_t size;
-
-	listint_t *new;
-
-	if (head == NULL || *head == NULL)
-
+	if (head == NULL)
 		return (NULL);
-
-	node = get_nodeint_at_index(*head, idx);
-
-	before = *head;
-
-	size = listint_len(*head);
-
-	if (idx > size)
-
-		return (NULL);
-
-	new = malloc(sizeof(listint_t));
-
-	if (new == NULL)
-
-		return (NULL);
-
-	new->n = n;
-
-	while (before->next != node)
+	if (idx != 0)
 	{
-
-		before = before->next;
-
+		temp = *head;
+		for (i = 0; i < idx - 1 && temp != NULL; i++)
+		{
+			temp = temp->next;
+		}
+		if (temp == NULL)
+			return (NULL);
 	}
-	new->next = node;
-	before->next = new;
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	if (idx == 0)
+	{
+		new->next = *head;
+		*head = new
+			return (new);
+	}
+	new->next = temp->next;
+	temp->next = new;
 	return (new);
 }
