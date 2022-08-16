@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
-  * free_listint - Frees a list
-  * @head: The head of the list
-  *
-  * Return: Null void
-  */
+ * free_listint - Frees a list
+ * @head: The head of the list
+ *
+ * Return: Null void
+ */
 
 void free_listint(listint_t *head)
 {
