@@ -8,7 +8,6 @@ size_t min(size_t a, size_t b);
  * min - returns the minimum of two size_t values
  * @a: first value
  * @b: second value
- *
  * Return: `a` if lower or equal to `b`, `b` otherwise
  */
 size_t min(size_t a, size_t b)
@@ -24,7 +23,6 @@ size_t min(size_t a, size_t b)
  * @value: value to search for
  * @low: starting index
  * @high: ending index
- *
  * Return: index containing `value`, or -1 if `value` not found or
  * `array` is NULL
  */
