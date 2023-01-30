@@ -5,7 +5,6 @@
  * linear_skip - searches for a value conatined in a skip list; assumes a
  * list with sorted values and a single skip layer with nodes at every index
  * which is a multiple of the square root of the size of the list
- *
  * @list: pointer to the head of the skip list to traverse
  * @value: value to search for
  * Return: pointer on the first node where value is located, or NULL if list
